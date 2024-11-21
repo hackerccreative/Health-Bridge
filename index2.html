@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"> <!-- Adjust the path as necessary -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> <!-- For some browsers -->
+    <title>HealthBridge - AI-Powered Child Healthcare</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="HealthBridge Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#consult">Consult Now</a></li>
+                <a href="#docbot" class="cta-button">AI Health Consultant</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to HealthBridge</h1>
+            <p>Your trusted partner in child healthcare powered by AI.</p>
+            <img src="images/cartoon-character.png" alt="Cartoon Character" class="cartoon-character">
+            <a href="#consult" class="cta-button">Consult Now</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>At HealthBridge, we leverage AI technology to provide personalized healthcare solutions for children. Our mission is to ensure every child receives the care they deserve.</p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Remote Monitoring</li>
+                <li>Predictive Analytics for Health</li>
+                <li>Personalized Care Plans</li>
+                <li>24/7 Consultation</li>
+            </ul>
+        </section>
+
+        <section id="consult" class="consult">
+            <h2>Consult with Our Experts</h2>
+            <!-- <form id="consultation-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Describe your child's health issue..." required></textarea>
+                <button type="submit">Submit</button>
+            </form> -->
+            <div id="form-main">
+                <div id="form-div">
+                  <form class="form" id="form1">
+                    
+                    <p class="name">
+                      <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Your Name" id="name" />
+                    </p>
+                    
+                    <p class="email">
+                      <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id=" your Email" placeholder="Email" />
+                    </p>
+                    
+                    <p class="text">
+                      <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Describe your child's health issue..."></textarea>
+                    </p>
+                    
+                    
+                    <div class="submit">
+                      <input type="submit" value="SEND" id="button-blue"/>
+                      <div class="ease"></div>
+                    </div>
+                  </form>
+                </div>
+        </section>
+        <div id="docbot">
+            <!-- <script>
+                window.embeddedChatbotConfig = {
+                chatbotId: "f-yzJjBOFnXyN4-qjWntj",
+                domain: "www.chatbase.co"
+                }
+                </script>
+                <script
+                src="https://www.chatbase.co/embed.min.js"
+                chatbotId="f-yzJjBOFnXyN4-qjWntj"
+                domain="www.chatbase.co"
+                defer>
+                </script> -->
+                <script>
+                    window.embeddedChatbotConfig = {
+                    chatbotId: "8m_NLeKr8kcQ-dZ0cmNPo",
+                    domain: "www.chatbase.co"
+                    }
+                    </script>
+                    <script
+                    src="https://www.chatbase.co/embed.min.js"
+                    chatbotId="8m_NLeKr8kcQ-dZ0cmNPo"
+                    domain="www.chatbase.co"
+                    defer>
+                </script>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HealthBridge. All rights reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener("load", function () {
+            document.querySelector(".content").style.display = "none";
+            // Once your content is ready, hide the loader
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoonish font */
+    background-color: #f9f9f9; /* Light background for a clean look */
+    color: #333; /* Dark text for contrast */
+    /* styles.css */
+    background-image: url('images/bg-image.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+
+}
+
+header {
+    background-color: #4CAF50; /* Green color for healthcare theme */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo img {
+    width: 100px; /* Logo size */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Yellow color on hover */
+}
+
+.hero {
+    background-color: #e8f5e9; /* Light green background for hero section */
+    text-align: center; /* Centered text */
+    padding: 50px 20px; /* Padding for spacing */
+    position: relative; /* Positioning for animation */
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Large heading size */
+    margin-bottom: 20px; /* Space below heading */
+    animation: slideIn 1s ease-in-out; /* Animation for heading */
+}
+
+.cartoon-character {
+    width: 200px; /* Size of the cartoon character */
+    margin: 20px 0;
+    animation: bounce 1s infinite; /* Animation for character */
+}
+
+.cta-button {
+    background-color: #ff5722; /* Orange button color */
+    color: white; /* White text on button */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.cta-button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+.about, .services, .consult, .contact {
+    padding: 40px 20px; /* Padding for sections */
+    text-align: center; /* Centered text */
+    animation: fadeIn 1s ease-in; /* Animation for sections */
+}
+
+.about h2, .services h2, .consult h2, .contact h2 {
+    font-size: 2em; /* Section heading size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.services ul {
+    list-style-type: none; /* Remove bullet points */
+}
+
+.about{
+    position: relative;
+}
+
+.services ul li {
+    font-size: 1.2em; /* Slightly larger font for service items */
+    margin: 10px 0; /* Space between service items */
+}
+
+.consult form {
+    display: flex; /* Flexbox layout for form */
+    flex-direction: column; /* Vertical layout */
+    max-width: 400px; /* Max width for form */
+    margin: 0 auto; /* Center the form */
+}
+
+.consult form input, .consult form textarea {
+    padding: 10px; /* Padding for inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size for inputs */
+}
+
+.consult form button {
+    background-color: #4CAF50; /* Green button color */
+    color: white; /* White text on button */
+    padding: 10px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.consult form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+    background-color: #4CAF50; /* Green footer background */
+    color: white; /* White text in footer */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding for footer */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    position: fixed; /* Positioning for footer */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.chat-box {
+    height: 400px;
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    background-image: url("./images/chat-bg.avif");
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    background-color: #e1f5fe;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #c8e6c9;
+    text-align: left;
+}
+
+
+
+.container{
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 30%;
+    min-width: 30%;
+    height: 80%;
+    border: solid 2px #120A19;
+    background-color: rgba(84, 41, 124, .9);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+h1{
+    display: flex;
+    margin: 4% auto;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 30px ;
+}
+hr{
+    width: 100%;
+    border: 1px solid #120A19;
+}
+label{
+    display: block;
+    margin: auto;
+    padding: 1vh;
+
+}
+
+input[type="text"],input[type="email"], input[type="number"] {
+    display: block;
+    margin: 2% auto;
+    width: 85%;
+    height: 4vh;
+    max-height: 30px;
+    border-radius: 5px;
+    border: solid 2px #120A19;
+    background-color: #DBD6DF;
+}
+input[type="submit"]{
+    display:block;
+    margin: 4% auto;
+    width: 30%;
+    height: 4vh;
+    background-color: #120A19;
+    color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+textarea{
+    display: block;
+    margin: 2% auto 0;
+    width: 85%;
+    height: 22vh;
+    max-height: 165px;
+    border-radius: 5px;
+    border: solid 2px #120A19;
+    background-color: #DBD6DF;
+    font-family: sans-serif;
+}
+
+input:hover {
+    transform: scale(1.05);
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;  /* Remove default margin */
+}
+
+/* Apply background image to the whole page */
+body {
+    background: url(images/bg-image.jpg) no-repeat center center fixed;
+    background-size: cover; /* Ensure background covers the full page */
+}
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+    background-color: rgba(72, 72, 72, 0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    width: 450px;
+    position: absolute;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 7px; /* Modern way to set border radius */
+}
+
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+    height: 1%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}

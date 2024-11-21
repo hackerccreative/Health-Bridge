@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Contact Us - HealthBridge</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="HealthBridge Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <hr>
+            <!-- Wrap the inputs in a form -->
+            <form id="contact-form">
+                <label for="name"><input type="text" id="name" placeholder="What's your name?" required></label>
+                <label for="email"><input type="email" id="email" placeholder="Please enter your email" required></label>
+                <label for="phone"><input type="number" id="phone" placeholder="Phone number" required></label>
+                <label for="mensaje"><textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Leave us a message." required></textarea></label>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HealthBridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>
